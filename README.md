@@ -9,7 +9,7 @@ masters.
 Upload this plugin to your XenServer host and use the CLI to call the host
 plugin:
 
-```bash
+```
 [user@local ~]$ git clone https://github.com/simonjbeaumont/xapi-braindump
 [user@local ~]$ scp xapi-braindump/braindump root@xs-host:/etc/xapi.d/plugins
 [user@local ~]$ ssh root@xs-host
