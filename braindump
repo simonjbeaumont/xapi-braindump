@@ -1,0 +1,16 @@
+#!/usr/bin/python
+
+import XenAPIPlugin
+
+BRAIN_STR = "brain!"
+
+
+def main(session, args):
+    try:
+        size = args["brain-size"]
+        return BRAIN_STR * (size / len(BRAIN_STR) + 1)[:size]
+    except:
+        raise RuntimeError("No argument found with key 'brain-size'.")
+
+if __name__ == "__main__":
+    XenAPIPlugin.dispatch({"main": main})
