@@ -13,5 +13,5 @@ plugin:
 [user@local ~]$ git clone https://github.com/simonjbeaumont/xapi-braindump
 [user@local ~]$ scp xapi-braindump/braindump root@xs-host:/etc/xapi.d/plugins
 [user@local ~]$ ssh root@xs-host
-[root@xs-host ~]# xe host-call-plugin host-uuid=<host-uuid> plugin=braindump args:brain-size=<size-in-bytes> 
+[root@xs-host ~]# xe host-call-plugin host-uuid=<host-uuid> plugin=braindump fn=main args:brain-size=<size-in-bytes>
 ```
